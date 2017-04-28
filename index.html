@@ -241,15 +241,228 @@
              <div class="row">
                  <div id="iN2" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
                 
-                    <script type="text/javascript">
-                        $(function() {
-                            $.getJSON("in2.json", function(data) {
-                                var option2 = data;
-                                var myChart2 = echarts.init(document.getElementById('iN2'));
-                                
-                                myChart2.setOption(option2);
-                            })
+                    
+                    <script> 
+                    var myChart2 = echarts.init(document.getElementById('iN2'));
+
+                    myChart2.setOption({
+                        baseOption: {
+                "timeline": {
+                    //loop: false,        
+                    "axisType": "category",
+                    "show": true,
+                    "autoPlay": true,
+                    "playInterval": 1500,
+                    "data" : ["2011", "2012", "2013","2014", "2015", "2016"]
+                },
+            },
+            //变量则写在options中
+                    options: [{
+                                title: {
+                                text: '2011設在香港的地區總部按母公司所屬國家',
+                                x:'center',
+                                textStyle:{
+                                            "color": "#FFFFFF",
+                                            "bottom": 30
+                                        }
+                            },
+                            tooltip : {
+                                trigger: 'item',
+                                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                            },
+                            legend: {
+                                orient: 'vertical',
+                                left: 'left',
+                                data: ['美國','日本','中國大陸','英聯邦','德國','法國','瑞士','其他'],
+                                 textStyle:{
+                                            "color": "#FFFFFF",
+                                            "bottom": 30
+                                        }
+                            },
+                            series : [
+                                {
+                                    name: '2011設在香港的地區總部按母公司所屬國家',
+                                    type: 'pie',
+                                    radius : '50%',
+                                    center: ['50%', '60%'],
+                                    data:[
+                                        {value:315, name:'美國'},
+                                        {value:222, name:'日本'},
+                                        {value:97, name:'中國大陸'},
+                                        {value:117, name:'英聯邦'},
+                                        {value:84, name:'德國'},
+                                        {value:63, name:'法國'},
+                                        {value:39, name:'瑞士'},
+                                        {value:403, name:'其他'}
+                                    ],
+                                    itemStyle: {
+                                        emphasis: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                        }
+                                    }
+                                }]
+                            
+                              },{
+                                title: {
+                                text: '2012設在香港的地區總部按母公司所屬國家',
+                                x:'center'
+                            },
+                            tooltip : {
+                                trigger: 'item',
+                                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                            },
+                            legend: {
+                                orient: 'vertical',
+                                left: 'left',
+                                data: ['美國','日本','中國大陸','英聯邦','德國','法國','瑞士','其他']
+                            },
+                            series : [
+                                {
+                                    name: '2012設在香港的地區總部按母公司所屬國家',
+                                    type: 'pie',
+                                    radius : '50%',
+                                    center: ['50%', '60%'],
+                                    data:[
+                                        {value:333, name:'美國'},
+                                        {value:219, name:'日本'},
+                                        {value:106, name:'中國大陸'},
+                                        {value:122, name:'英聯邦'},
+                                        {value:86, name:'德國'},
+                                        {value:62, name:'法國'},
+                                        {value:41, name:'瑞士'},
+                                        {value:398, name:'其他'}
+                                    ],
+                                    itemStyle: {
+                                        emphasis: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                        }
+                                    }
+                                }]
+                            
+                              },{
+                                title: {
+                                text: '2013設在香港的地區總部按母公司所屬國家',
+                                x:'center'
+                            },
+                            tooltip : {
+                                trigger: 'item',
+                                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                            },
+                            legend: {
+                                orient: 'vertical',
+                                left: 'left',
+                                data: ['美國','日本','中國大陸','英聯邦','德國','法國','瑞士','其他']
+                            },
+                            series : [
+                                {
+                                    name: '2013設在香港的地區總部按母公司所屬國家',
+                                    type: 'pie',
+                                    radius : '50%',
+                                    center: ['50%', '60%'],
+                                    data:[
+                                        {value:316, name:'美國'},
+                                        {value:245, name:'日本'},
+                                        {value:114, name:'中國大陸'},
+                                        {value:126, name:'英聯邦'},
+                                        {value:81, name:'德國'},
+                                        {value:66, name:'法國'},
+                                        {value:43, name:'瑞士'},
+                                        {value:388, name:'其他'}
+                                    ],
+                                    itemStyle: {
+                                        emphasis: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                        }
+                                    }
+                                }]
+                            
+                              },{
+                                title: {
+                                text: '2014設在香港的地區總部按母公司所屬國家',
+                                x:'center'
+                            },
+                            tooltip : {
+                                trigger: 'item',
+                                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                            },
+                            legend: {
+                                orient: 'vertical',
+                                left: 'left',
+                                data: ['美國','日本','中國大陸','英聯邦','德國','法國','瑞士','其他']
+                            },
+                            series : [
+                                {
+                                    name: '2014設在香港的地區總部按母公司所屬國家',
+                                    type: 'pie',
+                                    radius : '50%',
+                                    center: ['50%', '60%'],
+                                    data:[
+                                        {value:310, name:'美國'},
+                                        {value:240, name:'日本'},
+                                        {value:119, name:'中國大陸'},
+                                        {value:120, name:'英聯邦'},
+                                        {value:91, name:'德國'},
+                                        {value:68, name:'法國'},
+                                        {value:45, name:'瑞士'},
+                                        {value:396, name:'其他'}
+                                    ],
+                                    itemStyle: {
+                                        emphasis: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                        }
+                                    }
+                                }]
+                            
+                              },{
+                                title: {
+                                text: '2015設在香港的地區總部按母公司所屬國家',
+                                x:'center'
+                            },
+                            tooltip : {
+                                trigger: 'item',
+                                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                            },
+                            legend: {
+                                orient: 'vertical',
+                                left: 'left',
+                                data: ['美國','日本','中國大陸','英聯邦','德國','法國','瑞士','其他']
+                            },
+                            series : [
+                                {
+                                    name: '2015設在香港的地區總部按母公司所屬國家',
+                                    type: 'pie',
+                                    radius : '50%',
+                                    center: ['50%', '60%'],
+                                    data:[
+                                        {value:307, name:'美國'},
+                                        {value:238, name:'日本'},
+                                        {value:133, name:'中國大陸'},
+                                        {value:126, name:'英聯邦'},
+                                        {value:87, name:'德國'},
+                                        {value:67, name:'法國'},
+                                        {value:43, name:'瑞士'},
+                                        {value:400, name:'其他'}
+                                    ],
+                                    itemStyle: {
+                                        emphasis: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                        }
+                                    }
+                                }]
+                            
+                              }]
                         });
+    
                     </script>
                         
                 </div>
@@ -309,39 +522,61 @@
                         
                 </div>
             </div>
-            <span> </span>
+           <br>
+           <br>
             <div class="row">
-                <div id="age" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
+                    <div id="age" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
+                    
+                        <script type="text/javascript">
+                            $(function() {
+                                $.getJSON("age.json", function(data) {
+                                    var option4 = data;
+                                    var myChart4 = echarts.init(document.getElementById('age'));
+                                    
+                                    myChart4.setOption(option4);
+                                })
+                            });
+                        </script>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-left">
+                            <h3 class="section-heading">人口老化</h3>
+                            <p class="text-muted">政府預計未來十五年平均每年人口增長不足百分之一，2031年開始將出現負增長至百分之0.4，人口下跌問題加劇，新勞動力或需要倚靠新移民家庭。
+                                <br>
+                                <br>
+                                生育及死亡率亦同時下跌，2041年女性平均壽命達90.8歲，男性則80.5歲；介時六十五歲或以上人士佔整體人口三成，並按年急增。生育率亦自1981年下降接近五成，2014年每千名女性只有35.9名產下嬰兒，預計勞動人口會受這兩個因素持續下跌，2064年將跌至僅得311萬人。機構建議政府調整退休年齡及培訓人才。
+                                <br>
+                                <br>
+                                根據經濟合作與發展組織發表，現時全球各地長者勞動力參與率，香港只有百分之8.8，比排行首位的冰島低27.8個百分點，亦比鄰近地區如南韓，日本，新加坡等低超過15個百分點。機構指本港醫療制度健全，長者保建意識高，相信長者亦能如常工作，加上有經驗，對紓緩勞工短缺問題有作用。
+                                <br>
+                                <br>
+                                整體勞動力預計會在下年開始由升轉跌，低技術勞工最為嚴重，機構指香港比起新加坡等鄰近地區的年輕勞動力少，因其他地區積極吸引外勞，擴大勞動力人口。</p>
+                        </div>
+      
+                </div>
+                <br><br>
+                <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-left">
+                        <h3 class="section-heading">工作態度</h3>
+                        <p class="text-muted">香港人的工作態度一向認真，而且很多人即使身體抱恙亦會堅持上班。香港人對工作的熱誠亦是保持香港有高競爭力的原因。而勞資雙方亦對對方有信心，勞資雙方通常都靠對話解決分歧。罷工、怠工、按章 工作等工業行動比很多國家少。《競爭力報告》展示了不同國家每千名僱員因罷工及閉廠所損失的工作日數，由2010至2012年間，香港的數字低至0.1天和0.2天，即是公司因僱員罷工而無法工作的日子是少於一日，而2013年的日數則有4.2天，雖然較以年上升，但這個數字仍然比很多國家低。如瑞士2013年就有13371.9天是無法工作。在亞洲地區中，南韓2013年亦有35.1因僱員罷工而無法工作，足足是香港的8倍多。由此可見，香港僱員的效率高，亦會以和平方式解決勞資糾紛，不會導致公司有重大損失，這亦是香港保持著高競爭力的原因之一。   </p>
+                    </div>
+               
+                <div id="language" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
                 
                     <script type="text/javascript">
                         $(function() {
-                            $.getJSON("age.json", function(data) {
-                                var option4 = data;
-                                var myChart4 = echarts.init(document.getElementById('age'));
+                            $.getJSON("language.json", function(data) {
+                                var option3 = data;
+                                var myChart3 = echarts.init(document.getElementById('language'));
                                 
-                                myChart4.setOption(option4);
+                                myChart3.setOption(option3);
                             })
                         });
                     </script>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-left">
-                        <h3 class="section-heading">人口老化</h3>
-                        <p class="text-muted">政府預計未來十五年平均每年人口增長不足百分之一，2031年開始將出現負增長至百分之0.4，人口下跌問題加劇，新勞動力或需要倚靠新移民家庭。
-                            <br>
-                            <br>
-                            生育及死亡率亦同時下跌，2041年女性平均壽命達90.8歲，男性則80.5歲；介時六十五歲或以上人士佔整體人口三成，並按年急增。生育率亦自1981年下降接近五成，2014年每千名女性只有35.9名產下嬰兒，預計勞動人口會受這兩個因素持續下跌，2064年將跌至僅得311萬人。機構建議政府調整退休年齡及培訓人才。
-                            <br>
-                            <br>
-                            根據經濟合作與發展組織發表，現時全球各地長者勞動力參與率，香港只有百分之8.8，比排行首位的冰島低27.8個百分點，亦比鄰近地區如南韓，日本，新加坡等低超過15個百分點。機構指本港醫療制度健全，長者保建意識高，相信長者亦能如常工作，加上有經驗，對紓緩勞工短缺問題有作用。
-                            <br>
-                            <br>
-                            整體勞動力預計會在下年開始由升轉跌，低技術勞工最為嚴重，機構指香港比起新加坡等鄰近地區的年輕勞動力少，因其他地區積極吸引外勞，擴大勞動力人口。</p>
-                    </div>
-               
-                
                         
                 </div>
             </div>
+            </div>
+            
         </div>
     </section>
 
