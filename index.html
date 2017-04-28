@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>香港長遠競爭力研究</title>
 
     <!-- Bootstrap Core CSS -->
@@ -22,7 +23,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,8 +32,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="echarts.min.js"></script>
+
+     <script src="echarts.min.js"></script>
 
 </head>
 
@@ -110,20 +111,19 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-left">
                 
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
                         <p class="text-muted">香港能具有如此高的競爭力，其中的重要因素莫過於是司法獨立和落實法治的能力。香港的法治在國際間享負盛名，亦備受商界信賴。在全球公義計劃的法治指數中，香港歷年來都名列前茅，在最新的2016報告中，香港整體法治排行全球第16，分數為0.77分（1分為滿分），較2015年微升一位，亦比不少先進國家高，如比美國和南韓分別高出兩位和三位。而比排於80名的中國更高出64位。在2014年中，香港亦同樣排行16名。而在各個分項中，香港的表現亦十分出色，如在2016年的報告中，在刑事公義上，香港得分0.8分，排名第6。而在清廉指數中，香港亦排名第8。由此可見，香港的維護法治方面表現突出，亦是令香港保持高競爭力的重要因素。</p>
                     
                 </div>
                
-                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width: 400px;height:400px;">
+                <div id="main" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
                 
                     <script type="text/javascript">
                         $(function() {
                             $.getJSON("rol.json", function(data) {
-                                var option2 = data;
-                                var myChart2 = echarts.init(document.getElementById('main'));
+                                var option = data;
+                                var myChart = echarts.init(document.getElementById('main'));
                                 
-                                myChart2.setOption(option2);
+                                myChart.setOption(option);
                             })
                         });
                     </script>
@@ -133,16 +133,103 @@
         </div>
     </section>
 
-    
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
+     <section id="international" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">國際網絡</h2>
+                    <hr class="primary">
+                </div>
             </div>
         </div>
-    </aside>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-left">
+                
+                        <p class="text-muted">香港擁有很強的國際網絡，如不少國際公司亦選擇在香港開設總公司，而外資在港的投資亦很高，令香港成為一個國際化的都會。根據《競爭力報告》中的數據顯示，在2014年已經有1032.5 億美元的外國資金流入香港，為全球排名第2，僅次於中國的1285 億，亦比美國高出一倍。</p>
+                    
+                </div>
+               
+                <div id="iN1" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
+                
+                    <script type="text/javascript">
+                        $(function() {
+                            $.getJSON("in1.json", function(data) {
+                                var option1 = data;
+                                var myChart1 = echarts.init(document.getElementById('iN1'));
+                                
+                                myChart1.setOption(option1);
+                            })
+                        });
+                    </script>
+                        
+                </div>
+            </div>
+             <div class="row">
+                 <div id="iN2" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
+                
+                    <script type="text/javascript">
+                        $(function() {
+                            $.getJSON("in2.json", function(data) {
+                                var option2 = data;
+                                var myChart2 = echarts.init(document.getElementById('iN2'));
+                                
+                                myChart2.setOption(option2);
+                            })
+                        });
+                    </script>
+                        
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-left">
+                
+                        <p class="text-muted">另外，亦有很多外國公司於香港開設總部，《競爭力報告》中亦顯示，在2015年，總共有1401間外國公司於香港設立地區總部，而當中美國公司佔22%。由此可見，香港的國際化經濟背景亦是令香港保持競爭力的原因。</p>
+                    
+                </div>
+               
+                
+            </div>
+
+        </div>
+    </section>
+
+ <section id="workpower">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">法治</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-left">
+                
+                        <p class="text-muted">本港近年語文水平下跌，根據Education First 所發表的報告顯示2015年本港英語水平在鄰近五個地區當中排行第四，全球排行第三十三，只得52.7分，短短兩年下跌了十一位，被日本及台灣追過。新加坡則高據榜首，高香港8.38分，得鄰近地區首位，全球排名維持第十二位。
+
+匯賢智庫分析語文水平下跌主因是英文科不鼓勵背誦，改用傳意式教育；中文科亦取消失範文背誦影響語法學習。現時中文科於兩年前新增十二篇文言文範文，機構相信會有助提升長遠的語文能力。</p>
+                    
+                </div>
+               
+                <div id="main" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
+                
+                    <script type="text/javascript">
+                        $(function() {
+                            $.getJSON("rol.json", function(data) {
+                                var option = data;
+                                var myChart = echarts.init(document.getElementById('main'));
+                                
+                                myChart.setOption(option);
+                            })
+                        });
+                    </script>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <section id="contact">
         <div class="container">
