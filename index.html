@@ -79,7 +79,7 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
                 <hr>
-                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+                <p>是次研究是關於匯賢智庫發表有關香港長遠競爭力的報告，了解香港軟實力。香港的鄰近地區如新加坡，台灣，南韓等，正高速發展經濟及社會，競爭力不容忽視，本港競爭力正面臨挑戰。報告分析香港的優勢，困難及機遇，了解如何面對及計劃長遠政策。</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
@@ -196,7 +196,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">法治</h2>
+                    <h2 class="section-heading">勞動人口</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -204,25 +204,50 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-left">
-                
+                        <h3 class="section-heading">語文水平</h3>
                         <p class="text-muted">本港近年語文水平下跌，根據Education First 所發表的報告顯示2015年本港英語水平在鄰近五個地區當中排行第四，全球排行第三十三，只得52.7分，短短兩年下跌了十一位，被日本及台灣追過。新加坡則高據榜首，高香港8.38分，得鄰近地區首位，全球排名維持第十二位。
-
-匯賢智庫分析語文水平下跌主因是英文科不鼓勵背誦，改用傳意式教育；中文科亦取消失範文背誦影響語法學習。現時中文科於兩年前新增十二篇文言文範文，機構相信會有助提升長遠的語文能力。</p>
-                    
-                </div>
+                            <br>
+                            <br>
+                            
+                            匯賢智庫分析語文水平下跌主因是英文科不鼓勵背誦，改用傳意式教育；中文科亦取消失範文背誦影響語法學習。現時中文科於兩年前新增十二篇文言文範文，機構相信會有助提升長遠的語文能力。</p>
+                    </div>
                
-                <div id="main" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
+                <div id="language" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
                 
                     <script type="text/javascript">
                         $(function() {
-                            $.getJSON("rol.json", function(data) {
-                                var option = data;
-                                var myChart = echarts.init(document.getElementById('main'));
+                            $.getJSON("language.json", function(data) {
+                                var option3 = data;
+                                var myChart3 = echarts.init(document.getElementById('language'));
                                 
-                                myChart.setOption(option);
+                                myChart3.setOption(option3);
                             })
                         });
                     </script>
+                        
+                </div>
+            </div>
+            <span> </span>
+            <div class="row">
+                <div id="age" class="col-lg-6 col-md-6 col-xs-6 col-sm-6" style="width:500px;height:400px;">
+                
+                    <script type="text/javascript">
+                        $(function() {
+                            $.getJSON("age.json", function(data) {
+                                var option4 = data;
+                                var myChart4 = echarts.init(document.getElementById('age'));
+                                
+                                myChart4.setOption(option4);
+                            })
+                        });
+                    </script>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-left">
+                        <h3 class="section-heading">人口老化導致勞動力不足</h3>
+                        <p class="text-muted">政府預計未來十五年平均每年人口增長不足百分之一，2031年開始將出現負增長至百分之0.4，人口下跌問題加劇，新勞動力或需要倚靠新移民家庭。生育及死亡率亦同時下跌，2041年女性平均壽命達90.8歲，男性則80.5歲；介時六十五歲或以上人士佔整體人口三成，並按年急增。生育率亦自1981年下降接近五成，2014年每千名女性只有35.9名產下嬰兒，預計勞動人口會受這兩個因素持續下跌，2064年將跌至僅得311萬人。機構建議政府調整退休年齡及培訓人才。根據經濟合作與發展組織發表，現時全球各地長者勞動力參與率，香港只有百分之8.8，比排行首位的冰島低27.8個百分點，亦比鄰近地區如南韓，日本，新加坡等低超過15個百分點。機構指本港醫療制度健全，長者保建意識高，相信長者亦能如常工作，加上有經驗，對紓緩勞工短缺問題有作用。整體勞動力預計會在下年開始由升轉跌，低技術勞工最為嚴重，機構指香港比起新加坡等鄰近地區的年輕勞動力少，因其他地區積極吸引外勞，擴大勞動力人口。</p>
+                    </div>
+               
+                
                         
                 </div>
             </div>
